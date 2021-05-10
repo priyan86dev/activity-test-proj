@@ -63,6 +63,7 @@ public class DummyUserService {
 		if (userRepository.findAll().size() == 0) {
 			userRepository.save(new DummyUser(1, "aaaa", "superuser"));
 			userRepository.save(new DummyUser(2, "bbbb", "user"));
+			userRepository.save(new DummyUser(3, "cccc", "user"));
 		}
 	}
 }
